@@ -18,14 +18,14 @@ The dataset was originally put together for object detection, but may also be us
 Dataset class names can be used to classify images as note names or crotchet notes in general. If classifying as crotchet notes, the only available class is ```note```, and there are 3020 bounding boxes in total for this class.
 
 If classifying as note names, there are 8 classes in total: ```LC, D, E, F, G, A, B, HC```, where ```LC``` refers to the note C3 and ```HC``` refers to the note C4. Across the images, these classes are somewhat more irregular and a breakdown of bounding boxes can be found below:
-- LC: 123 bounding boxes
-- D: 170 bounding boxes
-- E: 224 bounding boxes
-- F: 265 bounding boxes
-- G: 789 bounding boxes
-- A: 636 bounding boxes
-- B: 509 bounding boxes
-- HC: 304 bounding boxes
+- ```LC```: 123 bounding boxes
+- ```D```: 170 bounding boxes
+- ```E```: 224 bounding boxes
+- ```F```: 265 bounding boxes
+- ```G```: 789 bounding boxes
+- ```A```: 636 bounding boxes
+- ```B```: 509 bounding boxes
+- ```HC```: 304 bounding boxes
 
 ### The Images
 There are a total of 18 images used for the dataset, with data augmentation performed on each one to produce 31 unique images. The 18 images are named as follows:
