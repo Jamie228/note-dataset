@@ -2,7 +2,7 @@
 This repository contains key scripts used to develop my Undergraduate Major Project, as well as the complete dataset used for object detection training.
 
 ## About This Project
-The goal of this project is to produce an application capable of basic OMR (Optical Music Recognition). The application will be deployed on Android and should be able to detect, as a proof-of-concept, 8 different crotchet notes denoting the notes C3 to C4 (in treble clef).
+The goal of this project is to produce an application capable of basic OMR (Optical Music Recognition). The application will be deployed on Android and should be able to detect, as a proof-of-concept, 8 different crotchet (quarter) notes denoting the notes C3 to C4 (in treble clef).
 
 ## Python Scripts
 Below is a list of Python scripts (written in Google Colab) that have been used in the project.
