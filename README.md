@@ -1,13 +1,14 @@
-# Undergraduate Major Project
-This repository contains key scripts used to develop my Undergraduate Major Project, as well as the complete dataset used for object detection training.
+# Crotchet Note Dataset
+This repository contains key scripts used to develop my Undergraduate Major Project, as well as the complete dataset used for object detection training for my final artefact.
 
 ## About This Project
-The goal of this project is to produce an application capable of basic OMR (Optical Music Recognition). The application will be deployed on Android and should be able to detect, as a proof-of-concept, 8 different crotchet (quarter) notes denoting the notes C3 to C4 (in treble clef).
+The goal of this project is to produce an application capable of basic OMR (Optical Music Recognition). The application will be deployed on Android and should be able to detect, as a proof-of-concept, 8 different crotchet (quarter) notes denoting the notes C3 to C4 (in treble clef) in still and moving images.
 
 ## Python Scripts
 Below is a list of Python scripts (written in Google Colab) that have been used in the project.
 
 - [create_pascal_voc.ipynb](create_pascal_voc.ipynb): A script written to produce Pascal-VOC style XML files for each image in the dataset from the CSV containing all bounding boxes for the dataset.
+- [dataset_to_tfrecord.py](dataset_to_tfrecord.py): Parses the XML file in this respository and creates corresponding testing and training TFRecord files for model training. Through research, the script places 10% of bounding boxes into the test file and the rest into the training file.
 
 ## The Dataset
 The dataset was originally put together for object detection, but may also be used for image classification if that's the intention. A CSV file is provided that contains all 3020 bounding boxes for the dataset. The CSV file does not have a header row, but the columns are as follows:
@@ -28,7 +29,7 @@ If classifying as note names, there are 8 classes in total: ```LC, D, E, F, G, A
 - ```HC```: 304 bounding boxes
 
 ### The Images
-There are a total of 18 images used for the dataset, with data augmentation performed on each one to produce 31 unique images. The 18 images are named as follows:
+There are a total of 18 images used for the dataset, with data augmentation performed on each one to produce 30 additional images for every image (resulting in 558 unique images). The 18 images are named as follows:
 
 ```LC, D, E, F, G, A, B, HC, XA, XB, XC, XD, XE, XF, XG, XH, XI, XJ```
 
